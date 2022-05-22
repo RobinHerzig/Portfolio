@@ -10,6 +10,16 @@
 		$body = $('body'),
 		$main = $('#main');
 
+	// // Email.
+	// document.querySelector('#emailSubmit').addEventListener('click', sendEmail)
+	// function sendEmail() {
+	// 	const name = document.querySelector('#demo-name').value
+	// 	const email = document.querySelector('#demo-email').value
+	// 	const message = document.querySelector('#demo-message').value
+
+		
+	// }
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],

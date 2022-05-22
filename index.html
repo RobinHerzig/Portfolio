@@ -40,8 +40,8 @@
 
 						<!-- Portfolio -->
 							<section id="intro" class="main special">
-								<header class="major">
-									<h2>Web Development Portfolio</h2>
+								<!-- <header class="major">
+									<h2>Web Development and App Portfolio</h2>
 								</header>
 								<ul class="features">
 									<li>
@@ -59,27 +59,81 @@
 										<h3>Example</h3>
 										<p>More information coming soon!</p>
 									</li>
-								</ul>
+								</ul> -->
+
+								<header class="major">
+									<h2>Web Development and App Portfolio</h2>
+								</header>
+								<div class="spotlight">
+									<ul class="features">
+										<li>
+											<span class="image website">
+												<img src="images/pic02.jpg" alt="Default image design" />
+											</span>
+											<div class="content">
+												<h3>Computer Aided Dispatch</h3>
+												<p>More information coming soon!</p>
+											</div>
+										</li>
+										<li>
+											<span class="image website">
+												<img src="images/drydeserthotsauce.gif" alt="Dry Desert Hot Sauce gif" />
+											</span>
+											<div class="content">
+												<h3>Dy Desert Hot Sauce</h3>
+												<p>A fully responsive and modern website for a home business. Features creator and product information.</p>
+											</div>
+										</li>
+										<li>
+											<span class="image website">
+												<img src="images/pic02.jpg" alt="Default image design" />
+											</span>
+											<div class="content">
+												<h3>Next Project</h3>
+												<p>More information coming soon!</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+
 								<header class="major">
 									<h2>3D Graphics Portfolio</h2>
 								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>De_Coldwater</h3>
-										<p>More information coming soon!</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>De_Legacy</h3>
-										<p>More information coming soon!</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Example</h3>
-										<p>More information coming soon!</p>
-									</li>
-								</ul>
+								<div class="spotlight">
+									<ul class="features">
+										<li>
+											<span class="image graphics">
+												<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=215971897" target="_blank">
+													<img src="images/coldwater.gif" alt="Gif of de_coldwater screenshots" />
+												</a>
+											</span>
+											<div class="content">
+												<h3>Coldwater</h3>
+												<p>A traditional German village is raided by Balkan terrorists on a cold morning. The GSG-9 are dispatched in response to this threat.</p>
+											</div>
+										</li>
+										<li>
+											<span class="image graphics">
+												<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=675402575" target="_blank">
+													<img src="images/legacy.gif" alt="Gif of de_legacy screenshots" />
+												</a>
+											</span>
+											<div class="content">
+												<h3>Legacy</h3>
+												<p>Fight in streets and courtyards as terrorists invade a Malta-inspired historic coastal city. Play as the Separatists – determined to disrupt the peaceful atmosphere, or the GIGN – dispatched to protect key cultural sites on the small Mediterranean island.</p>
+											</div>
+										</li>
+										<li>
+											<span class="image graphics">
+												<img src="images/pic02.jpg" alt="Default image design" />
+											</span>
+											<div class="content">
+												<h3>Next Project</h3>
+												<p>More information coming soon!</p>
+											</div>
+										</li>
+									</ul>
+								</div>
 								<!-- <footer class="major">
 									<ul class="actions special">
 										<li><a href="generic.html" class="button">Learn More</a></li>
@@ -172,7 +226,7 @@
 											<li><a href="generic.html" class="button">Learn More</a></li>
 										</ul> -->
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/RobinHerzig.png" alt="Photo of Robin Herzig" /></span>
 								</div>
 							</section>
 
@@ -183,20 +237,20 @@
 									<p>Want to collaborate on a project? Send me an email:</p>
 								</header>
 								<footer class="major">
-									<form method="post" action="#">
+									<form name="email-form" method="POST" data-netlify="true">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												<input type="text" name="name" id="name" value="" placeholder="Name" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												<input type="email" name="email" id="email" value="" placeholder="Email" />
 											</div>
 											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
 											</div>
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
+													<li><input type="submit" id="emailSubmit" value="Send Message" class="primary" /></li>
 												</ul>
 											</div>
 										</div>
@@ -209,11 +263,12 @@
 				<!-- Footer -->
 					<footer id="footer">
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://twitter.com/Robin_Herzig" target="_blank" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
+								<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+								<li><a href="https://github.com/RobinHerzig" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
+								<li><a href="https://www.linkedin.com/in/robinherzig/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
 							</ul>
 						<p class="copyright">&copy; Robin Herzig. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
