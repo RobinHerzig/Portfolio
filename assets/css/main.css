@@ -2978,9 +2978,15 @@ input, select, textarea {
 			}
 
 			.statistics img {
-				max-height: 64px;
-				max-width: 64px;
+				max-height: 2em;
+				max-width: 2em;
 				margin: auto;
+			}
+
+			.statistics p {
+				margin: 0;
+				margin-top: 1em;
+				text-align: center;
 			}
 
 			.statistics li strong, .statistics li b {
@@ -3023,10 +3029,19 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.statistics {
-				display: block;
+				/* display: block; */
 				width: 20em;
 				max-width: 100%;
 				margin: 0 auto 2em auto;
+				flex-direction: column;
+			}
+
+			.statistics li {
+				margin: auto;
+				width: 200px;
+				max-width: 40%;
+				text-align: center;
+				
 			}
 
 				.statistics li:first-child {
@@ -3217,20 +3232,21 @@ input, select, textarea {
 				padding: 4em 4em 0.1em 4em ;
 			}
 
-				#header.alt {
+				/* #header.alt {
 					padding: 6em 4em 3em 4em ;
-				}
+				} */
 
 		}
 
 		@media screen and (max-width: 980px) {
 
-			#header {
+			/* #header {
 				padding: 4em 3em 0.1em 3em ;
-			}
+			} */
 
 				#header.alt {
-					padding: 5em 3em 2em 3em ;
+					padding-top: calc((100vh / 2) - 80px);
+					margin-bottom: 10px;
 				}
 
 		}
@@ -3251,11 +3267,17 @@ input, select, textarea {
 					}
 
 				#header.alt {
-					padding: 4em 2em 1em 2em ;
+					padding: 2em;
+					padding-top: 10em;
+					height: 40vh;
 				}
 
 					#header.alt h1 {
-						font-size: 2.5em;
+						font-size: 3.5em;
+					}
+
+					#header.alt p {
+						font-size: 1.5em;
 					}
 
 		}
@@ -3266,9 +3288,9 @@ input, select, textarea {
 				padding: 3em 1.5em 0.1em 1.5em ;
 			}
 
-				#header.alt {
+				/* #header.alt {
 					padding: 4em 1.5em 1em 1.5em ;
-				}
+				} */
 
 		}
 
@@ -3278,9 +3300,9 @@ input, select, textarea {
 				padding: 2.5em 1em 0.1em 1em ;
 			}
 
-				#header.alt {
+				/* #header.alt {
 					padding: 3.5em 1em 0.5em 1em ;
-				}
+				} */
 
 		}
 
