@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -100,7 +94,7 @@ input, select, textarea {
 
 	body {
 		background-color: #253041;
-		background-image: url("images/pic02.jpg"), -moz-linear-gradient(45deg, #253041 10%, #515861 90%);
+		background-image: url("images/pic02.jpg"), -moz-linear-gradient(45deg, #253041 10%, #615b51 90%);
 		background-image: url("images/pic02.jpg"), -webkit-linear-gradient(45deg, #253041 10%, #515861 90%);
 		background-image: url("images/pic02.jpg"), -ms-linear-gradient(45deg, #253041 10%, #515861 90%);
 		background-image: url("images/pic02.jpg"), linear-gradient(45deg, #566274 20%, #484e57 80%);
@@ -162,7 +156,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		/* border-bottom: dotted 1px; */
 		color: inherit;
 	}
 
@@ -179,8 +173,13 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 1em 0 1em 0;
+		text-align: left;
 	}
+
+		p.bio {
+			margin-bottom: 2em;
+		}
 
 		p.content {
 			-moz-columns: 20em 2;
@@ -1845,13 +1844,14 @@ input, select, textarea {
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
-		height: 2.75em;
-		line-height: 2.75em;
-		min-width: 9.25em;
+		height: 2em;
+		line-height: 2em;
+		min-width: 7em;
 		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+		font: inherit;
 	}
 
 		input[type="submit"].icon,
@@ -2309,6 +2309,7 @@ input, select, textarea {
 
 		.icon.style1 {
 			color: #efa8b0;
+			max-width: 5%;
 		}
 
 		.icon.style2 {
@@ -2326,6 +2327,8 @@ input, select, textarea {
 		.icon.style5 {
 			color: #8cc9f0;
 		}
+
+
 
 		@media screen and (max-width: 1680px) {
 
@@ -2430,6 +2433,8 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+
 
 /* List */
 
@@ -2903,7 +2908,14 @@ input, select, textarea {
 		padding: 0;
 		list-style: none;
 		cursor: default;
+		display: flex;
+		justify-content: center;
+		flex: 1;
 	}
+
+		.statistics h2 {
+			text-align: left;
+		}
 
 		.statistics li {
 			-moz-flex: 1;
@@ -2913,34 +2925,71 @@ input, select, textarea {
 			padding: 1.5em;
 			color: #ffffff;
 			text-align: center;
+			display: flex;
+			flex-direction: column;
+			/* text-align: center; */
+			justify-content: space-between;
 		}
 
 			.statistics li.style1 {
-				background-color: #efa8b0;
+				background-color: #5d6174;
+			}
+			.statistics li.style1:hover {
+				background-color: #75323c;
 			}
 
 			.statistics li.style2 {
-				background-color: #c79cc8;
+				background-color: #5d6174;
+			}
+			.statistics li.style2:hover {
+				background-color: #33387a;
 			}
 
 			.statistics li.style3 {
-				background-color: #a89cc8;
+				background-color: #5d6174;
+			}
+			.statistics li.style3:hover {
+				background-color: #367c33;
 			}
 
 			.statistics li.style4 {
-				background-color: #9bb2e1;
+				background-color: #5d6174;
+			}
+			.statistics li.style4:hover {
+				background-color: #796f31;
 			}
 
 			.statistics li.style5 {
-				background-color: #8cc9f0;
+				background-color: #5d6174;
+			}
+			.statistics li.style5:hover {
+				background-color: #77482d;
+			}
+
+			.statistics li.style6 {
+				background-color: #5d6174;
+			}
+			.statistics li.style6:hover {
+				background-color: rgb(86, 91, 117);
+			}
+
+			.statistics li {
+				max-width: 15%;
+			}
+
+			.statistics img {
+				max-height: 64px;
+				max-width: 64px;
+				margin: auto;
 			}
 
 			.statistics li strong, .statistics li b {
 				display: block;
-				font-size: 2em;
-				line-height: 1.1;
+				font-size: 1em;
+				line-height: 1;
 				color: inherit !important;
 				font-weight: 300;
+				margin-top: 10px;
 				letter-spacing: -0.025em;
 			}
 
@@ -3034,13 +3083,13 @@ input, select, textarea {
 			display: inline-block;
 			margin-left: 4em;
 			padding: 0.65em;
-			border-radius: 25px;
+			border-radius: 8px;
 			border: solid 1px;
 		}
 
 			.spotlight .image img {
 				display: block;
-				border-radius: 25px;
+				border-radius: 8px;
 				width: 16em;
 				height: 16em;
 				object-fit: cover;
@@ -3108,25 +3157,27 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		/* padding: 5em 5em 1em 5em ; */
 		text-align: center;
+		height: calc(100vh - 80px);
 	}
 
 		#header h1 {
-			margin: 0 0 0.25em 0;
+			margin: 0 auto;
 		}
 
 		#header p {
-			font-size: 1.25em;
+			font-size: 3.25em;
 			letter-spacing: -0.025em;
+			text-align: center;
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding-top: calc((100vh / 2) - 80px);
 		}
 
 			#header.alt h1 {
-				font-size: 1.75em;
+				font-size: 3.75em;
 			}
 
 			#header.alt > * {
