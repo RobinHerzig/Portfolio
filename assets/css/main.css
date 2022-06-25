@@ -2450,7 +2450,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 2em 0 0 0;
 		padding-left: 1em;
 	}
 
@@ -2665,7 +2665,7 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin-bottom: 3em;
+		margin-bottom: 2em;
 	}
 
 		header.major h2 {
@@ -3115,10 +3115,10 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.spotlight {
-				-moz-flex-direction: column-reverse;
-				-webkit-flex-direction: column-reverse;
-				-ms-flex-direction: column-reverse;
-				flex-direction: column-reverse;
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
 				text-align: center;
 			}
 
@@ -3735,6 +3735,10 @@ input, select, textarea {
 
 			#main > .main {
 				padding: 4em 3em 2em 3em ;
+			}
+
+			#intro .image {
+				margin-top: 2em;
 			}
 
 				#main > .main > .image.main:first-child {
