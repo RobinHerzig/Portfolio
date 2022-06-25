@@ -92,14 +92,15 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		/* background-color: linear-gradient(90deg, #003c96 20%, #e6e6e6 80%); */
-		/* background-image: url("images/snow.jpg"), -moz-linear-gradient(45deg, #253041 10%, #615b51 90%);
+	/* body {
+		background-color: linear-gradient(90deg, #003c96 20%, #e6e6e6 80%);
+		background-image: url("images/snow.jpg"), -moz-linear-gradient(45deg, #253041 10%, #615b51 90%);
 		background-image: url("images/snow.jpg"), -webkit-linear-gradient(45deg, #253041 10%, #515861 90%);
 		background-image: url("images/snow.jpg"), -ms-linear-gradient(45deg, #253041 10%, #515861 90%);
-		background-image: url("../../images/snow.jpg"), linear-gradient(45deg, #566274 20%, #484e57 80%); */
+		background-image: url("../../images/snow.jpg"), linear-gradient(45deg, #566274 20%, #484e57 80%);
 		background-attachment: fixed;
-	}
+		background-size: cover;
+	} */
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -115,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background: linear-gradient(45deg, #b2b2b8 10%, #274975 60%);
+		background: linear-gradient(180deg, #213d63 25%, #748baa 30%);
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -2641,6 +2642,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		margin-top: 0;
 	}
 
 		ul.icons li {
@@ -3122,6 +3124,13 @@ input, select, textarea {
 				text-align: center;
 			}
 
+			.spotlight.reverse {
+				-moz-flex-direction: column-reverse;
+				-webkit-flex-direction: column-reverse;
+				-ms-flex-direction: column-reverse;
+				flex-direction: column-reverse;
+			}
+
 				.spotlight .content {
 					-moz-flex: 0 1 auto;
 					-webkit-flex: 0 1 auto;
@@ -3177,7 +3186,7 @@ input, select, textarea {
 	#header {
 		/* padding: 5em 5em 1em 5em ; */
 		text-align: center;
-		height: calc(100vh - 80px);
+		height: calc(100vh - 60px);
 	}
 
 		#header h1 {
@@ -3185,13 +3194,14 @@ input, select, textarea {
 		}
 
 		#header p {
-			font-size: 3.25em;
+			font-size: 2em;
 			letter-spacing: -0.025em;
 			text-align: center;
+			margin-bottom: 0;
 		}
 
 		#header.alt {
-			padding-top: calc((100vh / 2) - 80px);
+			padding-top: calc((100vh / 2) - 100px);
 		}
 
 			#header.alt h1 {
@@ -3229,36 +3239,36 @@ input, select, textarea {
 					max-width: 75%;
 				}
 
-		@media screen and (max-width: 1280px) {
+		/* @media screen and (max-width: 1280px) {
 
 			#header {
 				padding: 4em 4em 0.1em 4em ;
 			}
 
-				/* #header.alt {
+				#header.alt {
 					padding: 6em 4em 3em 4em ;
-				} */
+				}
 
-		}
+		} */
 
-		@media screen and (max-width: 980px) {
+		/* @media screen and (max-width: 980px) {
 
-			/* #header {
+			#header {
 				padding: 4em 3em 0.1em 3em ;
-			} */
+			}
 
 				#header.alt {
 					padding-top: calc((100vh / 2) - 80px);
 					margin-bottom: 10px;
 				}
 
-		}
+		} */
 
 		@media screen and (max-width: 736px) {
 
-			#header {
+			/* #header {
 				padding: 3em 2em 0.1em 2em ;
-			}
+			} */
 
 				#header p {
 					font-size: 1em;
@@ -3270,9 +3280,9 @@ input, select, textarea {
 					}
 
 				#header.alt {
-					padding: 2em;
-					padding-top: 10em;
-					height: 40vh;
+					/* padding: 2em; */
+					padding-top: calc(100vh / 2);
+					height: 100vh;
 				}
 
 					#header.alt h1 {
@@ -3449,7 +3459,7 @@ input, select, textarea {
 		background-color: #fcfcfc;
 		color: #252525;
 		border-radius: 0.25em;
-		box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3), -10px -5px 15px rgba(255, 255, 255, 0.3); 
+		box-shadow: 10px 5px 45px rgba(0, 0, 0, 0.3), -10px -5px 45px rgba(255, 255, 255, 0.3); 
 	}
 
 		#main input, #main select, #main textarea {
