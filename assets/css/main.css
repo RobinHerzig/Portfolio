@@ -116,7 +116,9 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background: linear-gradient(180deg, #213d63 25%, #748baa 30%);
+		/* background: linear-gradient(180deg, #213d63 25%, #748baa 30%); */
+		background-image: url("../../images/low_contrast_linen.png"), linear-gradient(180deg, #213d63 25%, #748baa 30%);
+		background-size: 500px;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -3459,7 +3461,8 @@ input, select, textarea {
 		background-color: #fcfcfc;
 		color: #252525;
 		border-radius: 0.25em;
-		box-shadow: 10px 5px 45px rgba(0, 0, 0, 0.3), -10px -5px 45px rgba(255, 255, 255, 0.3); 
+		/* box-shadow: 10px 5px 45px rgba(0, 0, 0, 0.3), -10px -5px 45px rgba(255, 255, 255, 0.3);  */
+		box-shadow: 10px 5px 45px rgba(0, 0, 0, 0.3), -15px -10px 45px rgba(0, 0, 0, 0.3); 
 	}
 
 		#main input, #main select, #main textarea {
