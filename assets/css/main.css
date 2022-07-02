@@ -3223,12 +3223,12 @@ input, select, textarea {
 		}
 
 		#header span {
-			font-size: 2em;
+			font-size: 1.5em;
 			letter-spacing: -0.025em;
 			text-align: center;
 			margin-bottom: 0;
 			position: absolute;
-			top: calc(100vh - 50px);
+			top: calc(100vh - 150px);
 			display: none;
 		}
 
