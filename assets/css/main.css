@@ -3228,7 +3228,7 @@ input, select, textarea {
 			text-align: center;
 			margin-bottom: 0;
 			position: absolute;
-			top: calc(100vh - 150px);
+			top: calc(100vh - 125px);
 			display: none;
 		}
 
