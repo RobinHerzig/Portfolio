@@ -2951,7 +2951,7 @@ input, select, textarea {
 		padding: 0;
 		list-style: none;
 		cursor: default;
-		justify-content: center;
+		justify-content: flex-end;
 		/* border: 1px solid #dddddd; */
 		box-shadow: var(--box-shadow-raised);
 		border-radius: 8px;
@@ -2974,7 +2974,7 @@ input, select, textarea {
 			flex-direction: column;
 			/* text-align: center; */
 			justify-content: space-between;
-			width: 6em;
+			width: 7em;
 		}
 
 			/* .statistics li.style1 {
@@ -2995,6 +2995,12 @@ input, select, textarea {
 				margin: 0;
 				margin-top: 1em;
 				text-align: center;
+			}
+			.statistics button {
+				min-width: 0;
+				margin-top: 22px;
+				padding: 0;
+				width: 90%;
 			}
 
 			.statistics li strong, .statistics li b {
@@ -3050,7 +3056,7 @@ input, select, textarea {
 				display: none;
 			} */
 
-			.statistics p {
+			.statistics a {
 				display: none;
 			}
 
