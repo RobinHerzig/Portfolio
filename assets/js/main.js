@@ -60,7 +60,7 @@
 				$nav_a
 					.scrolly({
 						speed: 1000,
-						offset: function() { return $nav.height(); }
+						offset: function() { return 48.4; }
 					})
 					.on('click', function() {
 
